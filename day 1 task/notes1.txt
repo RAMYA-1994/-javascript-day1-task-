@@ -1,0 +1,52 @@
+ This notes about objects and its internal representation in Javascript:
+
+ objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. These keys can be variables or functions and are called properties and methods, 
+ respectively, in the context of an object.
+ An object is a collection of properties, and a property is an association between a name (or key) and a value.
+  A property's value can be a function, in which case the property is known as a method.
+
+lets see some examples about object in Javascript:
+  
+     object const student = { firstName: 'ram', class: 10 };
+      const person = { name: 'John', age: 20 };
+       let person = { name: 'John', age: 20 }
+
+types of object:
+       As we know from the chapter Data types, there are eight data types in JavaScript. Seven of them are called “primitive”, 
+       because their values contain only a single thing (be it a string or a number or whatever).
+
+       internal representation in JavaScript:
+       A JavaScript object is a collection of named values having state and behavior (properties and method)”.
+        For example: Person, car, pen, bike, Personal Computer , Washing Machine etc. Take the case of cars
+
+these are internal representation in JavaScript:
+
+          Objects are important data types in javascript. 
+          Objects are different than primitive datatypes for ecample number, string, boolean, etc. 
+           Primitive data types contain one value but Objects can hold many values in form of Key: value pair.
+
+object representation:
+        
+        Is the construction of a formal description of the object using features based on its shape, contour or specific region. Published in Chapter: 
+        Representing Non-Rigid Objects with Neural Networks; From: Encyclopedia of Artificial Intelligence.
+
+        In JavaScript, the textual data is stored as strings. There is no separate type for a single character.
+         The internal format for strings is always UTF-16, it is not tied to the page encoding
+
+         JavaScript sports a number of built-in objects that extend the flexibility of the language. 
+         These objects are Date, Math, String, Array, and Object. 
+         Several of these objects are "borrowed" from the Java language specification,
+          but JavaScript's implementation of them is different.
+        
+objects and classes in JavaScript explain 
+          Classes and Objects are basic concepts of Object Oriented Programming that revolve around real-life entities. Classes: 
+            Classes were first introduced in the new version of the ES6 classes which replaced the previously used functions.
+              Class is nothing but a blueprint for an object of it.
+
+
+conclusion:
+             An object is a reference data type. Variables that are assigned a reference value are given 
+             a reference or a pointer to that value. That reference or pointer . These are the clarifications about
+             the object and internal representation in javascript. here conclude by the object and internal  representation
+
+

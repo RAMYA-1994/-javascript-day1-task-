@@ -1,0 +1,54 @@
+Write a blog on Difference between HTTP1.1 vs HTTP2
+
+ HTTP:
+The Hypertext Transfer Protocol (HTTP) is the foundation of the World Wide Web,
+ and is used to load webpages using hypertext links.
+
+Difference types of HTTP:
+The primary or most commonly-used HTTP methods are POST, GET, PUT, PATCH, and DELETE.
+
+HTTP1.1:
+Hypertext Transfer Protocol -- HTTP/1.1
+This document specifies an Internet standards track protocol for the Internet community, and
+ requests discussion and suggestions for improvements.
+
+ HTTP2:
+ HTTP/2 is a major revision of the HTTP network protocol used by the World Wide Web.
+ HTTP/2 was developed by the HTTP Working Group of the Internet Engineering Task Force.
+
+Difference between HTTP/1.1 and HTTP/2:
+Lets we see a differences, so here  there have been few revisions to the protocol. But in 2015, 
+a reimagined version called HTTP/2 came into use, which offered several methods to decrease latency, 
+especially when dealing with mobile platforms and server-intensive graphics and videos.
+HTTP/2 has since become increasingly popular, with some estimates suggesting 
+that around a third of all websites in the world support it.
+ web developers can benefit from understanding the technical differences between HTTP/1.1 and HTTP/2, 
+ allowing them to make informed and efficient decisions about evolving best practices. 
+
+ HTTP1.1 resource inlining:
+ if a client needs a specific CSS file to render a page, inlining that CSS file will provide the client with 
+ the needed resource before it asks for it, reducing the total number of requests that the client must send.
+ A major drawback of resource inlining, then, is that the client cannot separate the resource and the document. 
+ A finer level of control is needed to optimize the connection, a need that HTTP/2 seeks to meet with server push.
+ HTTP/2 server push:
+  This process is called server push. In this way, an HTTP/2 connection can accomplish the same goal of resource inlining while maintaining 
+  the separation between the pushed resource and the document. 
+
+  compression in HTTP/1.1 and HTTP/2:
+   HTTP/1.1 and HTTP/2 both use this strategy, but there are implementation problems in the former 
+   that prohibit compressing the entire message.
+   HTTP/1.1:
+   Programs like gzip have long been used to compress the data sent in HTTP messages, especially to decrease the size of CSS and JavaScript files. 
+   The header component of a message, however, is always sent as plain text.
+   HTTP/2:
+   HTTP/2 can split headers from their data, resulting in a header frame and a data frame. The HTTP/2-specific compression program HPACK can then compress this header frame. 
+   This algorithm can encode the header metadata using Huffman coding, thereby greatly decreasing its size. 
+   Additionally, HPACK can keep track of previously conveyed metadata fields 
+   and further compress them according to a dynamically altered index shared between the client and the server.
+
+   conclusion:
+   HTTP/2 differs from HTTP/1.1 in many ways, with some features providing greater levels of control that can be used
+    to better optimize web application performance and other features simply improving upon the previous protocol.
+     Now that you have gained a high-level perspective on the variations between the two protocols, 
+     you can consider how such factors as multiplexing, stream prioritization, flow control, server push, and compression in HTTP/2 will affect the changing landscape of web development.
+
